@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Projects</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">AlfaPSH</a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h1 class="fade-in">My Projects</h1>
+            <p class="fade-in delay-1">A selection of my recent work and personal projects</p>
+        </section>
+
+        <section class="projects-grid">
+            <div class="project-card fade-in">
+                <div class="project-image">
+                    <img src="src/project-images/portfolio.png" alt="portfolio">
+                </div>
+                <div class="project-details">
+                    <h3>This portfolio</h3>
+                    <p>It´s been so long since i don´t make any html website, I prefer react or vite but this is what i was able to make</p>
+                    <div class="project-tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Some templates</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="index.html" class="btn btn-small">Live Demo</a>
+                        <a href="https://github.com/AlfaPSH/Portfolio" class="btn btn-small btn-secondary">Source Code</a>
+                    </div>
+                    <button class="expand-btn" data-project="project1">Read more</button>
+                </div>
+                <div class="project-expanded" id="project1">
+                    <h4>Project Details</h4>
+                    <p>This website has been made on stock html, css and JavaScript</p>
+                    <p>The main challenge was implementing a smooth shopping experience without relying on any frameworks. All animations and transitions were handled with CSS, and the cart logic was built with vanilla JavaScript.</p>
+                    <div class="close-expanded">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card fade-in delay-1">
+                <div class="project-image">
+                    <img src="src/project-images/kernelsu.png" alt="kernelsu">
+                </div>
+                <div class="project-details">
+                    <h3>KSU optmization module</h3>
+                    <p>Kernelsu module that changes values on /proc to optimize the kernel as much as posible whithout losing any additional battery</p>
+                    <div class="project-tech">
+                        <span>Bash</span>
+                        <span>KSU module template</span>
+                        <span>KTweaks</span>
+                        <span>Android kernel</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/AlfaPSH/AlfaTweaks" class="btn btn-small btn-secondary">Source Code</a>
+                    </div>
+                    <button class="expand-btn" data-project="project2">Read more</button>
+                </div>
+                <div class="project-expanded" id="project2">
+                    <h4>Project Details</h4>
+                    <p>This ksu module optimizes A LOT of things, so this should work as a simple resume of what it does</p>
+                    <ul>
+                        <li>Configuration of the LMKD (Low Memory Killer Daemon).</li>
+                        <li>Changing the ZRAM compression algorithm to lz4.</li>
+                        <li>Mounting a swap file if present.</li>
+                        <li>Scheduler and CPU governor adjustments.</li>
+                        <li>Loading additional kernel modules.</li>
+                        <li>Generating log files.</li>
+                    </ul>
+                    <p>I know almost everything about the linux kernel, I specialize on Android ROM modification so i enjoy developing things for the android kernel</p>
+                    <div class="close-expanded">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card fade-in delay-2">
+              <img src="src/project-images/android_default.png" alt="android-default-app-icon">
+                </div>
+                <div class="project-details">
+                    <h3>Android root modification app</h3>
+                    <p>An app make to optimize kernel values using root access</p>
+                    <p>Still not finished so it will be closed source till it´s finished</p>
+                    <div class="project-tech">
+                        <span>Kotlin</span>
+                        <span>Java</span>
+                        <span>TopJohnWu's libsu </span>
+                    </div>
+                    <div class="project-links">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <a href="index.html">AlfaPSH</a>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/AlfaPSH" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/alfapsh700" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>&copy; 2025 AlfaPSH. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
